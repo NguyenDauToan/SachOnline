@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng và Toàn</title>
+   
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-inverse">
+        <!--navbar-fixed-top-->
+        @Html.Partial("_NavPartialView")
+        <!-- /.container-->
+    </nav>
+    <!--End-Nav-->
+
+    
+    <!--Phần tìm kiếm-->
+    
+    <!--Phần Slide-->
+    <div class="container">
+        @Html.Partial("_SlidePartiaView")
+    </div>
+    <!--End-Phần Slide-->
+    <div class="container">
+        <div class="row">
+            @Html.Partial("_ContainerPartialView")
+            @RenderBody()
+            <hr>
+        </div>
+        <!-- /.container-->
+        <!--Sách bán nhiều-->
+        <div class="container">
+            @Html.Partial("_BookPricePartialView")
+
+        </div>
+        <!-- /.container-->
+        <!--Footer-->
+        <footer class="container well">
+        </footer>
+        <!--End-Footer-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="~/Style/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/Style/js/bootstrap.js"></script>
+        <a href="~/Style/js/jquery-1.11.3"></a>
+        <script src="~/Style/js/jquery-1.11.3.min.js"></script>
+</body>
+</html>
