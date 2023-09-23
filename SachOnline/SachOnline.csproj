@@ -299,6 +299,7 @@
     <Content Include="Views\Shared\_SlidePartiaView.cshtml" />
     <Content Include="Views\Shared\_BookPricePartialView.cshtml" />
     <Content Include="Views\Shared\_ContainerPartialView.cshtml" />
+    <Content Include="Views\Shared\_FooterPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

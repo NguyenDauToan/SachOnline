@@ -3,8 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoàng và Toàn</title>
-   
+    <title>@ViewBag.Title</title>
+    <style type="text/css">
+        .imgbook {
+            transition: all 1s ease-in;
+            width: 400px;
+        }
+
+            .imgbook:hover {
+                transform: scale(0.9);
+                cursor: pointer;
+            }
+
+        .imgsachbannhieu {
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <!--Nav-->
@@ -26,6 +40,7 @@
     <div class="container">
         <div class="row">
             @Html.Partial("_ContainerPartialView")
+
             @RenderBody()
             <hr>
         </div>
@@ -37,8 +52,7 @@
         </div>
         <!-- /.container-->
         <!--Footer-->
-        <footer class="container well">
-        </footer>
+        @Html.Partial("_FooterPartialView")
         <!--End-Footer-->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
