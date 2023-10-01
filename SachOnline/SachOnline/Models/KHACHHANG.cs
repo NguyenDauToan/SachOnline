@@ -25,8 +25,8 @@ namespace SachOnline.Models
         public string TaiKhoan { get; set; }
         public string MatKhau { get; set; }
         public string Email { get; set; }
-        public string DiaChiKH { get; set; }
-        public string DienThoaiKH { get; set; }
+        public string DiaChi { get; set; }
+        public string DienThoai { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

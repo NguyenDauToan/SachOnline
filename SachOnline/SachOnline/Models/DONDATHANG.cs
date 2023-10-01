@@ -17,18 +17,18 @@ namespace SachOnline.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DONDATHANG()
         {
-            this.CHITIETDONHANGs = new HashSet<CHITIETDONHANG>();
+            this.CHITIETDATHANGs = new HashSet<CHITIETDATHANG>();
         }
     
         public int MaDonHang { get; set; }
-        public string DaThanhToan { get; set; }
-        public string TinhTrangGiaoHang { get; set; }
+        public Nullable<bool> DaThanhToan { get; set; }
+        public Nullable<int> TinhTrangGiaoHang { get; set; }
         public Nullable<System.DateTime> NgayDat { get; set; }
         public Nullable<System.DateTime> NgayGiao { get; set; }
         public Nullable<int> MaKH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CHITIETDONHANG> CHITIETDONHANGs { get; set; }
+        public virtual ICollection<CHITIETDATHANG> CHITIETDATHANGs { get; set; }
         public virtual KHACHHANG KHACHHANG { get; set; }
     }
 }

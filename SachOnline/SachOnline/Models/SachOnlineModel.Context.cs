@@ -13,10 +13,10 @@ namespace SachOnline.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbSachOnlineEntities : DbContext
+    public partial class SachOnlineEntities : DbContext
     {
-        public dbSachOnlineEntities()
-            : base("name=dbSachOnlineEntities")
+        public SachOnlineEntities()
+            : base("name=SachOnlineEntities")
         {
         }
     
@@ -25,13 +25,13 @@ namespace SachOnline.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<CHITIETDONHANG> CHITIETDONHANGs { get; set; }
+        public virtual DbSet<ADMIN> ADMINs { get; set; }
+        public virtual DbSet<CHITIETDATHANG> CHITIETDATHANGs { get; set; }
         public virtual DbSet<CHUDE> CHUDEs { get; set; }
         public virtual DbSet<DONDATHANG> DONDATHANGs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<NHAXUATBAN> NHAXUATBANs { get; set; }
         public virtual DbSet<SACH> SACHes { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TACGIA> TACGIAs { get; set; }
         public virtual DbSet<VIETSACH> VIETSACHes { get; set; }
     }

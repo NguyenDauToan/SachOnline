@@ -35,11 +35,21 @@
     <!--Phần Slide-->
     <div class="container">
         @Html.Partial("_SlidePartiaView")
+        
     </div>
     <!--End-Phần Slide-->
     <div class="container">
         <div class="row">
-            @Html.Partial("_ContainerPartialView")
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <ul class="list-group">
+                    @Html.Action("ChuDePartialView", "SachOnline")
+                    @Html.Action("NXBPartialView", "SachOnline")
+                </ul>
+                
+            </div>
+            
+    </div>
 
             @RenderBody()
             <hr>
