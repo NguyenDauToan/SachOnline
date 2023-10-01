@@ -12,12 +12,14 @@ namespace SachOnline.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagram
+    public partial class CHITIETDATHANG
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int MaDonHang { get; set; }
+        public int MaSach { get; set; }
+        public Nullable<int> SoLuong { get; set; }
+        public Nullable<decimal> DonGia { get; set; }
+    
+        public virtual DONDATHANG DONDATHANG { get; set; }
+        public virtual SACH SACH { get; set; }
     }
 }

@@ -4,23 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="0b9626fedbcd44b481dc3d72d5d04687" Name="Diagram1">
-        <EntityTypeShape EntityType="dbSachOnlineModel.CHITIETDONHANG" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.CHUDE" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.DONDATHANG" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.NHAXUATBAN" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.SACH" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.TACGIA" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbSachOnlineModel.VIETSACH" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_CHITIETDONHANG_DONDATHANG" ManuallyRouted="false" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_CHITIETDONHANG_SACH" ManuallyRouted="false" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_SACH_CHUDE" ManuallyRouted="false" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_DONDATHANG_KHACHHANG" ManuallyRouted="false" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_SACH_NHAXUATBAN" ManuallyRouted="false" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_VIETSACH_SACH" ManuallyRouted="false" />
-        <AssociationConnector Association="dbSachOnlineModel.FK_VIETSACH_TACGIA" ManuallyRouted="false" />
+      <Diagram DiagramId="ce4da5a08ab34f45b2d3df3593304795" Name="Diagram1">
+        <EntityTypeShape EntityType="SachOnlineModel.ADMIN" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.CHITIETDATHANG" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.CHUDE" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.DONDATHANG" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.NHAXUATBAN" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.SACH" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.TACGIA" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SachOnlineModel.VIETSACH" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SachOnlineModel.FK_CTDH_DDH" ManuallyRouted="false" />
+        <AssociationConnector Association="SachOnlineModel.FK_CTDH_S" ManuallyRouted="false" />
+        <AssociationConnector Association="SachOnlineModel.FK_S_CD" ManuallyRouted="false" />
+        <AssociationConnector Association="SachOnlineModel.FK_DDH_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="SachOnlineModel.FK_Sach_NXB" ManuallyRouted="false" />
+        <AssociationConnector Association="SachOnlineModel.FK_VS_S" ManuallyRouted="false" />
+        <AssociationConnector Association="SachOnlineModel.FK_VS_TG" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

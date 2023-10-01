@@ -129,10 +129,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SachOnlineController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CHITIETDONHANG.cs">
+    <Compile Include="Models\ADMIN.cs">
+      <DependentUpon>SachOnlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHITIETDATHANG.cs">
       <DependentUpon>SachOnlineModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CHUDE.cs">
@@ -165,9 +170,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SachOnlineModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>SachOnlineModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\TACGIA.cs">
       <DependentUpon>SachOnlineModel.tt</DependentUpon>
     </Compile>
@@ -198,8 +200,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\SachOnlineModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SachOnlineModel.Context.cs</LastGenOutput>
       <DependentUpon>SachOnlineModel.edmx</DependentUpon>
+      <LastGenOutput>SachOnlineModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\SachOnlineModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -300,6 +302,10 @@
     <Content Include="Views\Shared\_BookPricePartialView.cshtml" />
     <Content Include="Views\Shared\_ContainerPartialView.cshtml" />
     <Content Include="Views\Shared\_FooterPartialView.cshtml" />
+    <Content Include="Views\SachOnline\ChuDePartialView.cshtml" />
+    <Content Include="Views\User\DangKy.cshtml" />
+    <Content Include="Views\SachOnline\NXBPartialView.cshtml" />
+    <Content Include="Views\User\DangNhap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

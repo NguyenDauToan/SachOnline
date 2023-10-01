@@ -12,14 +12,13 @@ namespace SachOnline.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class CHITIETDONHANG
+    public partial class ADMIN
     {
-        public int MaDonHang { get; set; }
-        public int MaSach { get; set; }
-        public Nullable<int> SoLuong { get; set; }
-        public Nullable<double> DonGia { get; set; }
-    
-        public virtual DONDATHANG DONDATHANG { get; set; }
-        public virtual SACH SACH { get; set; }
+        public int MaAd { get; set; }
+        public string HoTen { get; set; }
+        public string DienThoai { get; set; }
+        public string TenDN { get; set; }
+        public string MatKhau { get; set; }
+        public Nullable<int> Quyen { get; set; }
     }
 }
